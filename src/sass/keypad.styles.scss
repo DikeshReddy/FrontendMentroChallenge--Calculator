@@ -1,0 +1,89 @@
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 18px;
+  width: 100%;
+  padding: 18px;
+  border-radius: 9px;
+  .normal-key {
+    font-size: 1rem;
+  }
+  .function-key {
+    font-size: 0.75rem;
+  }
+  .keypad-button {
+    border-radius: 5px;
+    &:hover {
+      filter: brightness(130%);
+    }
+  }
+  .reset {
+    grid-column: span 2;
+  }
+  .equal-to {
+    grid-column: span 2;
+  }
+}
+
+.theme1.keypad {
+  background-color: var(--theme1-keypad-bg);
+}
+.theme2.keypad {
+  background-color: var(--theme2-keypad-bg);
+}
+.theme3.keypad {
+  background-color: var(--theme3-keypad-bg);
+}
+
+.normal-key.theme1 {
+  background-color: var(--theme1-number-key);
+  color: var(--theme1-normal-font-color);
+  box-shadow: 0 4px 0 0 var(--theme1-number-key-shadow);
+}
+
+.function-key.theme1 {
+  background-color: var(--theme1-del-key);
+  color: var(--theme1-del-font-color);
+  box-shadow: 0 4px 0 0 var(--theme1-del-key-shadow);
+}
+
+.function-key.theme1.equal-to {
+  background-color: var(--theme1-equal-to-key);
+  box-shadow: 0 4px 0 0 var(--theme1-equal-to-key-shadow);
+}
+
+.normal-key.theme2 {
+  background-color: var(--theme2-number-key);
+  color: var(--theme2-normal-font-color);
+  box-shadow: 0 4px 0 0 var(--theme2-number-key-shadow);
+}
+
+.function-key.theme2 {
+  background-color: var(--theme2-del-key);
+  color: var(--theme2-del-font-color);
+  box-shadow: 0 4px 0 0 var(--theme2-del-key-shadow);
+}
+
+.function-key.theme2.equal-to {
+  background-color: var(--theme2-equal-to-key);
+  box-shadow: 0 4px 0 0 var(--theme2-equal-to-key-shadow);
+}
+
+.normal-key.theme3 {
+  background-color: var(--theme3-number-key);
+  color: var(--theme3-normal-font-color);
+  box-shadow: 0 4px 0 0 var(--theme3-number-key-shadow);
+}
+
+.function-key.theme3 {
+  background-color: var(--theme3-del-key);
+  color: var(--theme3-del-font-color);
+  box-shadow: 0 4px 0 0 var(--theme3-del-key-shadow);
+}
+
+.function-key.theme3.equal-to {
+  background-color: var(--theme3-equal-to-key);
+  color: var(--theme3-equal-font-color);
+  box-shadow: 0 4px 0 0 var(--theme3-equal-to-key-shadow);
+}

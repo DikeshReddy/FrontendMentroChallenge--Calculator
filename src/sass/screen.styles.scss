@@ -1,0 +1,38 @@
+.screen {
+  display: flex;
+  align-items: center;
+  height: 130px;
+  width: 100%;
+  background-color: white;
+  border-radius: 9px;
+  overflow: auto;
+  padding-inline: 34px;
+  .display-value {
+    margin-left: auto;
+    margin-right: 5px;
+    font-size: 1.5rem;
+  }
+}
+
+.theme1-screen-bg {
+  background-color: var(--theme1-screen-bg);
+}
+
+.theme2-screen-bg {
+  background-color: var(--theme2-screen-bg);
+}
+
+.theme3-screen-bg {
+  background-color: var(--theme3-screen-bg);
+}
+
+.theme1-screen-font-color {
+  color: var(--theme1-del-font-color);
+}
+
+.theme2-screen-font-color {
+  color: var(--theme2-normal-font-color);
+}
+.theme3-screen-font-color {
+  color: var(--theme3-normal-font-color);
+}

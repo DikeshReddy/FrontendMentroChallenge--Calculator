@@ -1,0 +1,92 @@
+.header {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  .calc {
+    font-size: 0.85rem;
+  }
+  .theme {
+    font-size: 0.35rem;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    .theme-switch {
+      display: flex;
+      align-items: center;
+      border-radius: 13px;
+      height: 26px;
+      width: 71px;
+      position: relative;
+      .theme-no {
+        position: absolute;
+      }
+      .one {
+        bottom: 25px;
+        left: 5px;
+      }
+      .two {
+        bottom: 25px;
+        left: 33px;
+      }
+      .three {
+        bottom: 25px;
+        left: 60px;
+      }
+      .circle {
+        border-radius: 12px;
+        height: 20px;
+        width: 20px;
+        &:hover {
+          filter: brightness(130%);
+        }
+      }
+      .move-1 {
+        transform: translateX(0);
+      }
+      .move-2 {
+        transform: translateX(25px);
+      }
+      .move-3 {
+        transform: translateX(50px);
+      }
+    }
+  }
+}
+
+.theme1-header-font-color {
+  color: var(--theme1-del-font-color);
+}
+
+.theme2-header-font-color {
+  color: var(--theme2-normal-font-color);
+}
+
+.theme3-header-font-color {
+  color: var(--theme3-normal-font-color);
+}
+
+.theme1-circle-color {
+  background-color: var(--theme1-equal-to-key);
+}
+
+.theme2-circle-color {
+  background-color: var(--theme2-equal-to-key);
+}
+
+.theme3-circle-color {
+  background-color: var(--theme3-equal-to-key);
+}
+
+.theme1-toggle-bg {
+  background-color: var(--theme1-keypad-bg);
+}
+
+.theme2-toggle-bg {
+  background-color: var(--theme2-keypad-bg);
+}
+
+.theme3-toggle-bg {
+  background-color: var(--theme3-keypad-bg);
+}
